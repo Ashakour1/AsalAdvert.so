@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 bg-[#92cff0] clip-hero"
         style={{
-          clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)",
+          clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 89%)",
         }}
       />
       <main className="container mx-auto px-20 py-16 md:pt-20 relative h-[600px]">
@@ -30,7 +30,7 @@ const HeroSection = () => {
             </div>
           </div>
           <div>
-            <Image width={450} height={300} src="/hero-sec.png" className="" alt="hero" />
+            <Image width={446} height={400} src="/hero-sec.png" className="" alt="hero" />
           </div>
         </div>
       </main>
