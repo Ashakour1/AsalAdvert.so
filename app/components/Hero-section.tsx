@@ -3,23 +3,17 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="relative">
-      <div
-        className="absolute inset-0 bg-[#92cff0] clip-hero"
-        style={{
-          clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 89%)",
-        }}
-      />
-      <main className="container mx-auto px-20 py-16 md:pt-20 relative h-[600px]">
+    <div className=" ">
+      <main className="container bg-[#92cff0] mx-auto px-20 py-16 md:pt-20  h-[550px]">
         <div className="flex justify-between">
-          <div className="max-w-[500px] pt-10 flex flex-col space-y-7 ">
+          <div className="max-w-[500px] pt-10 flex flex-col space-y-5 ">
             <div className="space-y-3">
-              <h1 className="text-5xl font-bold ">Your Growth,</h1>
-              <h1 className="text-5xl font-bold text-foreground">
+              <h1 className="text-6xl font-semibold ">Your Growth,</h1>
+              <h1 className="text-6xl font-semibold text-foreground">
                 Our Mission
               </h1>
             </div>
-            <p className="text-xl text-gray-200">
+            <p className="text-base text-gray-400">
               Asal Advert is a marketing & advertising company that creates
               successful solutions for your business.
             </p>
@@ -30,7 +24,13 @@ const HeroSection = () => {
             </div>
           </div>
           <div>
-            <Image width={446} height={400} src="/hero-sec.png" className="" alt="hero" />
+            <Image
+              width={446}
+              height={400}
+              src="/hero-sec.png"
+              className=""
+              alt="hero"
+            />
           </div>
         </div>
       </main>
