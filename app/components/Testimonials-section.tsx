@@ -1,16 +1,21 @@
 import React from "react";
+import HighlightedText from "./ui/HighlightedText";
 
 const Testimonials = () => {
   return (
-    <section className="py-20 px-4">
-      <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-blue-500 font-medium mb-4">Testimonials</h2>
-        <h3 className="text-[#1a1158] text-4xl font-bold mb-12">
-          What our customer say
-          <br />
-          about us!
-        </h3>
-
+    <section className="py-40 px-4">
+      <div className="max-w-3xl mx-auto text-center space-y-10">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          <HighlightedText
+            className="border border-foreground text-foreground text-base font-medium"
+            text="Testimonials"
+          />{" "}
+          <h3 className="text-[#1a1158] text-3xl font-bold mb-12">
+            What our customer say
+            <br />
+            about us!
+          </h3>
+        </div>
         <div className="relative mb-12">
           <div className="text-gray-600 text-lg leading-relaxed mb-8 px-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus vel
@@ -28,7 +33,6 @@ const Testimonials = () => {
             "
           </span>
         </div>
-
         {/* Dots/Avatars */}
         <div className="flex justify-center items-center gap-4 mb-8">
           <div className="w-10 h-10 rounded-full bg-gray-200"></div>
@@ -43,7 +47,6 @@ const Testimonials = () => {
           <div className="w-10 h-10 rounded-full bg-gray-200"></div>
           <div className="w-10 h-10 rounded-full bg-gray-200"></div>
         </div>
-
         {/* Author info */}
         <div className="text-center">
           <h4 className="text-[#1a1158] font-semibold text-lg">
