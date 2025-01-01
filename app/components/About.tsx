@@ -4,7 +4,7 @@ import HighlightedText from "./ui/HighlightedText";
 
 const About = () => {
   return (
-    <main className="max-w-[1040px] mx-auto py-10  min-h-screen">
+    <main className="max-w-[1040px] mx-auto py-32  min-h-screen">
       <HighlightedText
         className="border border-foreground text-foreground text-base font-medium"
         text="About Us"
