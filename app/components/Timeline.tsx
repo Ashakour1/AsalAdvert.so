@@ -9,7 +9,7 @@ export default function Timeline() {
 
       <div className="relative">
         {/* Timeline line */}
-        <div className="absolute left-1/2 h-full w-0.5 -translate-x-1/2 bg-gray-100" />
+        <div className="absolute left-1/2 h-full w-0.5 -translate-x-1/2 border-dashed border-gray-200 border-2" />
 
         {/* Vision Section */}
         <div className="relative mb-20">
