@@ -4,8 +4,8 @@ import React from "react";
 const HeroSection = () => {
   return (
     <div className=" ">
-      <main className="container bg-[#92cff0] mx-auto px-20 py-16 md:pt-20  h-[550px]">
-        <div className="flex justify-between">
+      <main className="bg-[#92cff0] w-full  py-16 md:pt-20  h-[550px]">
+        <div className="container mx-auto px-20 flex justify-between">
           <div className="max-w-[500px] pt-10 flex flex-col space-y-5 ">
             <div className="space-y-3">
               <h1 className="text-6xl font-semibold ">Your Growth,</h1>
