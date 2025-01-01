@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header className="max-w-[1040px] mx-auto">
-      <div className="flex justify-between items-center py-2">
+      <div className="flex justify-between md:px-0 px-4 items-center py-2">
         <div className="logo">
           <img src="/asal-logo.png" className="w-36" alt="logo" />
         </div>
@@ -60,7 +60,7 @@ const Header = () => {
               Contact
             </Link>
             <Link className="p-4 border-b" href="/events">
-              Events
+              Services
             </Link>
             <button
               onClick={handleOpen}
