@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import HighlightedText from "./ui/HighlightedText";
 
 const Portfolio = () => {
   const projects = [
@@ -30,17 +31,18 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="py-16 px-4 md:px-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-sm font-medium tracking-wide uppercase text-blue-600 mb-2">
-            Portfolio
-          </h2>
+    <section className="w-full py-12 md:py-24 lg:py-20 ">
+      <div className="container mx-auto px-4 md:px-6 space-y-4">
+        <div className="flex flex-col items-center justify-center space-y-10 text-center py-6">
+          <HighlightedText
+            className="border border-foreground text-foreground text-base font-medium"
+            text="Our Portfolio "
+          />
           <h3 className="text-3xl font-bold tracking-tight md:text-4xl">
-            Some of our <span className="text-blue-600">recent</span> work
+            Complete <span className="text-foreground">Projects</span>
           </h3>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 px-4 md:px-24 gap-6 mb-8">
           {projects.map((project) => (
             <Link
               key={project.id}
@@ -65,9 +67,9 @@ const Portfolio = () => {
         <div className="text-center">
           <Link
             href="/portfolio"
-            className="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
+            className="inline-block px-6 py-3 bg-foreground text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
           >
-            View More
+            See All Projects
           </Link>
         </div>
       </div>
