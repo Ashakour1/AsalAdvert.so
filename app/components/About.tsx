@@ -1,17 +1,19 @@
 import Image from "next/image";
 import React from "react";
+import HighlightedText from "./ui/HighlightedText";
 
 const About = () => {
   return (
-    <main className="max-w-[1040px] mx-auto  min-h-screen">
-      <h1 className="text-xl font-medium text-foreground text-center py-5">
-        About Us
-      </h1>
-      <div className="flex gap-2">
-        <div className="w-[450px]">
+    <main className="max-w-[1040px] mx-auto py-10  min-h-screen">
+      <HighlightedText
+        className="border border-foreground text-foreground text-base font-medium"
+        text="About Us"
+      />
+      <div className="flex gap-5 mt-5 ">
+        <div className="w-[450px] ">
           <Image src="/about-image.png" alt="about" width={440} height={400} />
         </div>
-        <div className="w-[450px] flex flex-col ">
+        <div className="w-[500px] flex flex-col ">
           <div className="space-y-2 pt-5">
             <h1 className="text-xl font-semibold text-foreground">
               Who We Are
@@ -43,7 +45,7 @@ const About = () => {
               market.
             </p>
           </div>
-          <button className="text-white bg-background px-4 py-2 mt-16 rounded-md w-40">
+          <button className="text-white bg-background px-4 py-2 mt-9 rounded-md w-40">
             Read More
           </button>
         </div>
