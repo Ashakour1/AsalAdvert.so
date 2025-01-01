@@ -1,14 +1,18 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import HighlightedText from "./ui/HighlightedText";
 
 const Customers = () => {
   const [isHovered, setIsHovered] = useState(true);
   return (
     <section className="py-20 px-4">
       <div className="max-w-[1040px] mx-auto text-center items-center flex flex-col ">
-        <div className="flex flex-col">
-          <h1 className="text-gray-500 text-2xl font-semibold">Some Our </h1>
+        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          <HighlightedText
+            className="border border-foreground text-foreground text-base font-medium"
+            text="Some Of our"
+          />{" "}
           <h1 className="text-4xl font-semibold text-foreground">
             Valued Costumers
           </h1>
