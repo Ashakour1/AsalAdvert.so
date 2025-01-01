@@ -7,6 +7,7 @@ import CompanySnapshot from "./components/Company-snapshot-section";
 import Testimonials from "./components/Testimonials-section";
 import Customers from "./components/Customers-section";
 import CallToAction from "./components/Cta-section";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       <CompanySnapshot />
       <Testimonials />
       <Customers />
-      <CallToAction />
+      <Footer/>
     </div>
   );
 }
