@@ -59,7 +59,7 @@ const Header = () => {
             <Link className="p-4 border-b" href="/contact">
               Contact
             </Link>
-            <Link className="p-4 border-b" href="/events">
+            <Link className="p-4 border-b" href="/services">
               Services
             </Link>
             <button
